@@ -7,7 +7,7 @@ This package uses mailgun as transporter for now...
 
 To get started, run:
 
-```
+```js
 npm i @monkey_king/sendemail
 ```
 
@@ -17,32 +17,32 @@ To use this package, you will need an account at https://www.mailgun.com/.
 
 To use this, in an ECMAScript, you will need to:
 
-```
-import {sendemail} from '@monkey_king/sendemail'
+```js
+import { sendemail } from "@monkey_king/sendemail";
 
 const send = () => {
-    sendemail(
-        auth, //required. will be the authentication object required by mailgun
-              //auth = {auth: {api_key: <Your private key>, domain: <Your domain>}}
+  sendemail(
+    auth, //required. will be the authentication object required by mailgun
+    //auth = {auth: {api_key: <Your private key>, domain: <Your domain>}}
 
-        sender, //required. string of the email sending the mail.
-                //It should be the same as the one used to create mailgun account
+    sender, //required. string of the email sending the mail.
+    //It should be the same as the one used to create mailgun account
 
-        recipient, //required. Array of the list of emails to send to. They should
-                  // be verified emails if you are using a free foundation plan in mailgun
+    recipient, //required. Array of the list of emails to send to. They should
+    // be verified emails if you are using a free foundation plan in mailgun
 
-        subject, //required. string of the email subject
+    subject, //required. string of the email subject
 
-        emailContent, //required. html passed as a string (ex: '<h1>Hello everyone</h1>')
+    emailContent, //required. html passed as a string (ex: '<h1>Hello everyone</h1>')
 
-        callback, //optional, takes two params. (error, result) => ...
-    )
-}
+    callback //optional, takes two params. (error, result) => ...
+  );
+};
 ```
 
 Example:
 
-```
+```js
 import {sendemail} from '@monkey_king/sendemail'
 
 const auth = {
@@ -72,12 +72,12 @@ const send = () => {
 
 To use this, in an CommonJS, you will need to:
 
-```
-const {sendemail} = require('@monkey_king/sendemail')
+```js
+const { sendemail } = require("@monkey_king/sendemail");
 
 /**
-* Rest of code goes here as for ECMAScript
-*/
+ * Rest of code goes here as for ECMAScript
+ */
 ```
 
 ## What next?
