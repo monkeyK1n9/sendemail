@@ -1,0 +1,32 @@
+{
+  "name": "@monkey_king/sendemail",
+  "version": "1.0.0",
+  "description": "A node package to send emails built ontop of nodemailer",
+  "main": "app.js",
+  "module": "./dist/app.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/app.js",
+      "import": "./dist/app.mjs"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup app.js --format cjs,esm",
+    "watch": "npm run build -- --watch app.js",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "NodeJS",
+    "nodemailer",
+    "mailgun",
+    "tsup"
+  ],
+  "author": "monkey_king",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^6.8.0",
+    "nodemailer-mailgun-transport": "^2.1.5",
+    "tsup": "^6.5.0"
+  }
+}
