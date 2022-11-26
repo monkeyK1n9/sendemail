@@ -1,6 +1,6 @@
 {
   "name": "@monkey_king/sendemail",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A node package to send emails built ontop of nodemailer",
   "main": "app.js",
   "module": "./dist/app.mjs",
@@ -22,6 +22,10 @@
     "mailgun",
     "tsup"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monkeyK1n9/sendemail"
+  },
   "author": "monkey_king",
   "license": "MIT",
   "dependencies": {
