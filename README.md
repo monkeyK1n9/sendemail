@@ -18,10 +18,10 @@ To use this package, you will need an account at https://www.mailgun.com/.
 To use this, in an ECMAScript, you will need to:
 
 ```js
-import { sendemail } from "@monkey_king/sendemail";
+import { sendEmail } from "@monkey_king/sendemail";
 
 const send = () => {
-  sendemail(
+  sendEmail(
     auth, //required. will be the authentication object required by mailgun
     //auth = {auth: {api_key: <Your private key>, domain: <Your domain>}}
 
@@ -43,7 +43,7 @@ const send = () => {
 Example:
 
 ```js
-import {sendemail} from '@monkey_king/sendemail'
+import {sendEmail} from '@monkey_king/sendemail'
 
 const auth = {
     auth: {
@@ -60,7 +60,7 @@ const emailContent = `
 `
 
 const send = () => {
-    sendemail(
+    sendEmail(
         auth,
         sender@gmail.com,
         ["recipient1@gmail.com", "recipient2@gmail.com"],
@@ -73,7 +73,7 @@ const send = () => {
 To use this, in an CommonJS, you will need to:
 
 ```js
-const { sendemail } = require("@monkey_king/sendemail");
+const { sendEmail } = require("@monkey_king/sendemail");
 
 /**
  * Rest of code goes here as for ECMAScript

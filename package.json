@@ -1,6 +1,6 @@
 {
   "name": "@monkey_king/sendemail",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A node package to send emails built ontop of nodemailer",
   "main": "app.js",
   "module": "./dist/app.mjs",
